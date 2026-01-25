@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c043ea1ab3b1a834292dd89f502c6fbd, type: 3}
+  m_Name: 2_Player Parts Data_Body
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: Resources/DataBase/Player Parts Data/2_Player Parts Data_Body
+    Guid:
+      Value: 382443483179265392
+  partName: 
+  partSprite: {fileID: 0}
+  partType: 0
+  partDescription: 
+  defaultConfig:
+    Id:
+      Value: 0
+  dashConfig:
+    Id:
+      Value: 0
+  healthPoint:
+    RawValue: 0
+  toughPoint:
+    RawValue: 0
+  minMoveSpeed:
+    RawValue: 0
+  maxMoveSpeed:
+    RawValue: 0
+  accelerationDuration:
+    RawValue: 0
+  groundTurnSpeed:
+    RawValue: 0
+  brakeMultiplier:
+    RawValue: 0
+  maxJumpHeight:
+    RawValue: 0
+  gravity:
+    RawValue: 0
+  fallSpeedMultiplier:
+    RawValue: 0
+  jumpLandStunDuration:
+    RawValue: 0
+  dashMoveSpeed:
+    RawValue: 0
+  toughPointRecoverAmount:
+    RawValue: 0
+  breakDuration:
+    RawValue: 0

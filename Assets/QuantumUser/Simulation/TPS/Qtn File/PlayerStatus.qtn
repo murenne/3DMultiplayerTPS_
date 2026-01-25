@@ -1,0 +1,41 @@
+﻿component PlayerStatusComponent
+{
+    [ExcludeFromPrototype] player_ref playerRef;
+    [ExcludeFromPrototype] entity_ref SpawnerEntityRef;
+    PlayerTeam PlayerTeam;
+
+    [ExcludeFromPrototype] CountdownTimer jumpCoyoteTimer;
+    [ExcludeFromPrototype] CountdownTimer unbeatableTimer;
+    [ExcludeFromPrototype] CountdownTimer damageBufferTimer;
+
+    [ExcludeFromPrototype] PlayerLocomotionType playerLocomotionType;
+    [ExcludeFromPrototype] PlayerPostureType playerPostureType;
+    [ExcludeFromPrototype] PlayerLocomotionType lastLocomotionType;
+    [ExcludeFromPrototype] PlayerPostureType lastPostureType;
+    [ExcludeFromPrototype] FP lastVerticalSpeed;
+
+    [Header("Enemy Entity")]
+    entity_ref enemyEntityRef;
+
+    [Header("Player Status")]
+    FP currentHealthPoint;
+    FP currentToughPoint;
+
+    [Header("Player Status Effect")]
+    StunStatusEffect stunStatusEffect;
+    BreakStatusEffect breakStatusEffect;
+}
+
+struct StunStatusEffect
+{
+    [ExcludeFromPrototype] CountdownTimer durationTimer;
+}
+
+struct BreakStatusEffect
+{
+    FP projectileIndex;
+    FP downMovenmentDistanceXZ;
+    FP downMovenmentDistanceY;
+    bool isHitWall;
+    [ExcludeFromPrototype] CountdownTimer durationTimer;
+}

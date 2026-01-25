@@ -1,0 +1,1004 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1722638350, guid: b156eeaae3f741b40af66649a4748430, type: 3}
+  m_Name: QuantumMap
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/QuantumMap
+    Guid:
+      Value: 515314389036349649
+  UserAsset:
+    Id:
+      Value: 0
+  Scene: GamePlayScene
+  ScenePath: Assets/Scenes/GamePlayScene.unity
+  SceneGuid: 9694f358b98d95a41a7f1a591551107d
+  WorldSize: 256
+  BucketsCount: 16
+  BucketsSubdivisions: 8
+  BucketingAxis: 0
+  SortingAxis: 1
+  SceneMeshCellSize:
+    RawValue: 262144
+  TriangleMeshCellSize: -1
+  StaticColliders3DTrianglesData:
+    Id:
+      Value: 524696337019763336
+  SerializeTrianglesMetadata: 0
+  GridSizeX: 64
+  GridSizeY: 64
+  GridNodeSize: 4
+  NavMeshLinks: []
+  Regions: []
+  StaticColliders2D: []
+  StaticColliders3D:
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: -32768
+      Z:
+        RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 2686976
+      Y:
+        RawValue: 36045
+      Z:
+        RawValue: 2686976
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Plane
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 0
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 23592
+      Z:
+        RawValue: 1081344
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 1310720
+      Y:
+        RawValue: 1638400
+      Z:
+        RawValue: 98304
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Front Boundary
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 1
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 23592
+      Z:
+        RawValue: -1081344
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 1310720
+      Y:
+        RawValue: 1638400
+      Z:
+        RawValue: 98304
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Behind Boundary
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 2
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -1081344
+      Y:
+        RawValue: 23592
+      Z:
+        RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 98304
+      Y:
+        RawValue: 1638400
+      Z:
+        RawValue: 1310720
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Left Boundary
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 3
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: 1081344
+      Y:
+        RawValue: 23592
+      Z:
+        RawValue: 0
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 98304
+      Y:
+        RawValue: 1638400
+      Z:
+        RawValue: 1310720
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Right Boundary
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 4
+      MutableMode: 0
+  MapEntities:
+  - Components:
+    - rid: 6688972890592772096
+    - rid: 6688972890592772097
+  - Components:
+    - rid: 7394180746497228800
+    - rid: 7394180746497228801
+  - Components:
+    - rid: 1892141855068389376
+    - rid: 1892141855068389377
+  - Components:
+    - rid: 2359445792353157120
+    - rid: 2359445792353157121
+  - Components:
+    - rid: 165847677496459264
+    - rid: 165847677496459265
+  - Components:
+    - rid: 4036439419018805248
+    - rid: 4036439419018805249
+  - Components:
+    - rid: 9214102009223839744
+    - rid: 9214102009223839745
+    - rid: 9214102009223839746
+    - rid: 9214102009223839747
+    - rid: 9214102009223839748
+    - rid: 9214102009223839749
+    - rid: 9214102009223839750
+    - rid: 9214102009223839751
+    - rid: 9214102009223839752
+    - rid: 9214102009223839753
+  - Components:
+    - rid: 6240891096621121536
+    - rid: 6240891096621121537
+    - rid: 6240891096621121538
+    - rid: 6240891096621121539
+    - rid: 6240891096621121540
+    - rid: 6240891096621121541
+    - rid: 6240891096621121542
+    - rid: 6240891096621121543
+    - rid: 6240891096621121544
+    - rid: 6240891096621121545
+  SerializedTriangleDataUncompressedSize: 8
+  references:
+    version: 2
+    RefIds:
+    - rid: 165847677496459264
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 17694720
+          Z:
+            RawValue: 0
+    - rid: 165847677496459265
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 1
+    - rid: 1892141855068389376
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: -655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: -327680
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 5898240
+          Z:
+            RawValue: 0
+    - rid: 1892141855068389377
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 0
+    - rid: 2359445792353157120
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 327680
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 17694720
+          Z:
+            RawValue: 0
+    - rid: 2359445792353157121
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 1
+    - rid: 4036439419018805248
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: -327680
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 17694720
+          Z:
+            RawValue: 0
+    - rid: 4036439419018805249
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 1
+    - rid: 6240891096621121536
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: -131072
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: -655360
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+    - rid: 6240891096621121537
+      type: {class: PhysicsCollider3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        ShapeConfig:
+          ShapeType: 32
+          SphereRadius:
+            RawValue: 32768
+          CapsuleRadius:
+            RawValue: 39322
+          CapsuleHeight:
+            RawValue: 163840
+          PositionOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 65536
+            Z:
+              RawValue: 0
+          BoxExtents:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          RotationOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          UserTag: 0
+          IsPersistent: 1
+          CompoundShapes: []
+        Layer: 6
+        IsTrigger: 0
+        PhysicsMaterial:
+          Id:
+            Value: 0
+    - rid: 6240891096621121538
+      type: {class: PhysicsCallbacks3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        CallbackFlags:
+          Value: 0
+    - rid: 6240891096621121539
+      type: {class: CharacterController3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Config:
+          Id:
+            Value: 2287226124725110619
+    - rid: 6240891096621121540
+      type: {class: EnemyFlagComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        _empty_prototype_dummy_field_: 0
+    - rid: 6240891096621121541
+      type: {class: PlayerActionComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        activeActionInfo:
+          _empty_prototype_dummy_field_: 0
+        actionInfoArray:
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 294914941642638713
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 337977273330072011
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 396101100660803054
+        actionsParameter:
+          jumpAction:
+            isJumping:
+              Value: 0
+            currentVerticalVelocity:
+              RawValue: 0
+          dashAction:
+            isDashing:
+              Value: 0
+            dashStartInAir:
+              Value: 0
+            airDashInertiaDirection:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+          gunAction:
+            projectileSpawnPosition:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+            projectileDirection:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+            consecutiveShootIntervalTimer:
+              TimeLeft:
+                RawValue: 0
+              StartTime:
+                RawValue: 0
+    - rid: 6240891096621121542
+      type: {class: PlayerDatabaseComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        equippingPartsIndexesList: []
+        bodyDatabase:
+          defaultConfig:
+            Id:
+              Value: 0
+          dashConfig:
+            Id:
+              Value: 0
+          healthPoint:
+            RawValue: 0
+          toughPoint:
+            RawValue: 0
+          minMoveSpeed:
+            RawValue: 0
+          maxMoveSpeed:
+            RawValue: 0
+          groundTurnSpeed:
+            RawValue: 0
+          brakeMultiplier:
+            RawValue: 0
+          accelerationDuration:
+            RawValue: 0
+          maxJumpHeight:
+            RawValue: 0
+          gravity:
+            RawValue: 0
+          fallSpeedMultiplier:
+            RawValue: 0
+          airTurnSpeed:
+            RawValue: 0
+          jumpLandStunDuration:
+            RawValue: 0
+          keepInertialVelocity:
+            Value: 0
+          dashMoveSpeed:
+            RawValue: 0
+          toughPointRecoverAmount:
+            RawValue: 0
+          breakDuration:
+            RawValue: 0
+        gunDatabase:
+          projectilePrototype:
+            Id:
+              Value: 0
+          gunMuzzleOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          gunConsecutiveShootIntervalDuration:
+            RawValue: 0
+          projectileAttackPoint:
+            RawValue: 0
+          projectileDownPoint:
+            RawValue: 0
+          projectileKnockBackPoint:
+            RawValue: 0
+          projectileSpeed:
+            RawValue: 0
+          projectileDuration:
+            RawValue: 0
+    - rid: 6240891096621121543
+      type: {class: PlayerMovementComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        currentCacheIndex:
+          RawValue: 0
+        velocityCache:
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        averageHorizontalVelocity:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        isAccelerating:
+          Value: 0
+        accelerationTimer:
+          TimeLeft:
+            RawValue: 0
+          StartTime:
+            RawValue: 0
+        currentHorizontalVelocity:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+    - rid: 6240891096621121544
+      type: {class: PlayerStatusComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 1
+        enemyEntityRef:
+          SceneIndexPlusOne: 0
+        currentHealthPoint:
+          RawValue: 0
+        currentToughPoint:
+          RawValue: 0
+        stunStatusEffect:
+          _empty_prototype_dummy_field_: 0
+        breakStatusEffect:
+          projectileIndex:
+            RawValue: 0
+          downMovenmentDistanceXZ:
+            RawValue: 0
+          downMovenmentDistanceY:
+            RawValue: 0
+          isHitWall:
+            Value: 0
+    - rid: 6240891096621121545
+      type: {class: PlayerTargetComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        targetArray:
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        targetCount: 0
+        currentTarget:
+          SceneIndexPlusOne: 0
+        currentTargetIndex: 0
+    - rid: 6688972890592772096
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: -655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 327680
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 5898240
+          Z:
+            RawValue: 0
+    - rid: 6688972890592772097
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 0
+    - rid: 7394180746497228800
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: -655360
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 5898240
+          Z:
+            RawValue: 0
+    - rid: 7394180746497228801
+      type: {class: PlayerSpawnerComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 0
+    - rid: 9214102009223839744
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 131072
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: -655360
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+    - rid: 9214102009223839745
+      type: {class: PhysicsCollider3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        ShapeConfig:
+          ShapeType: 32
+          SphereRadius:
+            RawValue: 32768
+          CapsuleRadius:
+            RawValue: 39322
+          CapsuleHeight:
+            RawValue: 163840
+          PositionOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 65536
+            Z:
+              RawValue: 0
+          BoxExtents:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          RotationOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          UserTag: 0
+          IsPersistent: 1
+          CompoundShapes: []
+        Layer: 6
+        IsTrigger: 0
+        PhysicsMaterial:
+          Id:
+            Value: 0
+    - rid: 9214102009223839746
+      type: {class: PhysicsCallbacks3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        CallbackFlags:
+          Value: 0
+    - rid: 9214102009223839747
+      type: {class: CharacterController3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Config:
+          Id:
+            Value: 2287226124725110619
+    - rid: 9214102009223839748
+      type: {class: EnemyFlagComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        _empty_prototype_dummy_field_: 0
+    - rid: 9214102009223839749
+      type: {class: PlayerActionComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        activeActionInfo:
+          _empty_prototype_dummy_field_: 0
+        actionInfoArray:
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 294914941642638713
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 337977273330072011
+        - actionType:
+            Value: 0
+          actionData:
+            Id:
+              Value: 396101100660803054
+        actionsParameter:
+          jumpAction:
+            isJumping:
+              Value: 0
+            currentVerticalVelocity:
+              RawValue: 0
+          dashAction:
+            isDashing:
+              Value: 0
+            dashStartInAir:
+              Value: 0
+            airDashInertiaDirection:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+          gunAction:
+            projectileSpawnPosition:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+            projectileDirection:
+              X:
+                RawValue: 0
+              Y:
+                RawValue: 0
+              Z:
+                RawValue: 0
+            consecutiveShootIntervalTimer:
+              TimeLeft:
+                RawValue: 0
+              StartTime:
+                RawValue: 0
+    - rid: 9214102009223839750
+      type: {class: PlayerDatabaseComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        equippingPartsIndexesList: []
+        bodyDatabase:
+          defaultConfig:
+            Id:
+              Value: 0
+          dashConfig:
+            Id:
+              Value: 0
+          healthPoint:
+            RawValue: 0
+          toughPoint:
+            RawValue: 0
+          minMoveSpeed:
+            RawValue: 0
+          maxMoveSpeed:
+            RawValue: 0
+          groundTurnSpeed:
+            RawValue: 0
+          brakeMultiplier:
+            RawValue: 0
+          accelerationDuration:
+            RawValue: 0
+          maxJumpHeight:
+            RawValue: 0
+          gravity:
+            RawValue: 0
+          fallSpeedMultiplier:
+            RawValue: 0
+          airTurnSpeed:
+            RawValue: 0
+          jumpLandStunDuration:
+            RawValue: 0
+          keepInertialVelocity:
+            Value: 0
+          dashMoveSpeed:
+            RawValue: 0
+          toughPointRecoverAmount:
+            RawValue: 0
+          breakDuration:
+            RawValue: 0
+        gunDatabase:
+          projectilePrototype:
+            Id:
+              Value: 0
+          gunMuzzleOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          gunConsecutiveShootIntervalDuration:
+            RawValue: 0
+          projectileAttackPoint:
+            RawValue: 0
+          projectileDownPoint:
+            RawValue: 0
+          projectileKnockBackPoint:
+            RawValue: 0
+          projectileSpeed:
+            RawValue: 0
+          projectileDuration:
+            RawValue: 0
+    - rid: 9214102009223839751
+      type: {class: PlayerMovementComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        currentCacheIndex:
+          RawValue: 0
+        velocityCache:
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        - X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        averageHorizontalVelocity:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        isAccelerating:
+          Value: 0
+        accelerationTimer:
+          TimeLeft:
+            RawValue: 0
+          StartTime:
+            RawValue: 0
+        currentHorizontalVelocity:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+    - rid: 9214102009223839752
+      type: {class: PlayerStatusComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PlayerTeam:
+          Value: 1
+        enemyEntityRef:
+          SceneIndexPlusOne: 0
+        currentHealthPoint:
+          RawValue: 0
+        currentToughPoint:
+          RawValue: 0
+        stunStatusEffect:
+          _empty_prototype_dummy_field_: 0
+        breakStatusEffect:
+          projectileIndex:
+            RawValue: 0
+          downMovenmentDistanceXZ:
+            RawValue: 0
+          downMovenmentDistanceY:
+            RawValue: 0
+          isHitWall:
+            Value: 0
+    - rid: 9214102009223839753
+      type: {class: PlayerTargetComponentPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        targetArray:
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        - SceneIndexPlusOne: 0
+        targetCount: 0
+        currentTarget:
+          SceneIndexPlusOne: 0
+        currentTargetIndex: 0

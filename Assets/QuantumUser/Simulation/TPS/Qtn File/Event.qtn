@@ -1,0 +1,31 @@
+﻿//game loop (synced: all client synced)
+synced event OnGameInitializing { }
+synced event OnGameStarting { }
+synced event OnGameRunning { }
+synced event OnGameOver { }
+
+//move
+event OnPlayerIdled { entity_ref PlayerEntityRef; }
+event OnPlayerMoved { entity_ref PlayerEntityRef; }
+
+//brake
+event OnPlayerBraked { entity_ref PlayerEntityRef; }
+
+//jump
+event OnPlayerJumped { entity_ref PlayerEntityRef; }
+event OnPlayerFalled { entity_ref PlayerEntityRef; }
+
+//dash
+event OnPlayerDashed { entity_ref PlayerEntityRef; }
+
+//effect
+event OnPlayerStunned{ entity_ref PlayerEntityRef;}
+event OnPlayerDamageReceived{ entity_ref PlayerEntityRef; FP currentHealthPoint; FP maxHealthPoint; }//是不是改用synced？
+event OnPlayerDied{ entity_ref PlayerEntityRef; }
+
+//break
+event OnPlayerBreaked{ entity_ref PlayerEntityRef; }
+
+//attack
+event OnPlayerGunAttackStarted{ entity_ref PlayerEntityRef; }
+event OnPlayerGunAttackEnded{ entity_ref PlayerEntityRef; }

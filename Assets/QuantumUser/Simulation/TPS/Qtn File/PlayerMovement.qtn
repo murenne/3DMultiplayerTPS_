@@ -1,0 +1,12 @@
+﻿component PlayerMovementComponent
+{
+    [Header("average Horizontal Velocity")]
+    FP currentCacheIndex;// current cache index
+    array<FPVector3>[3] velocityCache;// velocity cache
+    FPVector3 averageHorizontalVelocity;// average horizontal velocity of 3 cache
+
+    [Header("current Horizontal Velocity")]
+    bool isAccelerating;
+    CountdownTimer accelerationTimer;
+    FPVector3 currentHorizontalVelocity; 
+}

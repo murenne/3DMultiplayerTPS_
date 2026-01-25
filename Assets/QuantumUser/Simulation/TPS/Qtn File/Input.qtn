@@ -1,0 +1,12 @@
+input
+{
+    Button Jump;
+    Button Dash;
+    Button Gun;
+    button SwitchTarget;
+
+    FPVector3 PlayerMovementDirection;
+    FPVector3 CameraMovementDirection;
+    
+    Byte MovementEncoded;
+}

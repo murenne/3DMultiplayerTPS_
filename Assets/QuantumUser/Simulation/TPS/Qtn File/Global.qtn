@@ -1,0 +1,7 @@
+global
+{
+    GameState gameState;
+    CountdownTimer gameStateTimer;
+    CountdownTimer mainGameTimer;
+    array<FP>[2] teamPlayerCount;
+}

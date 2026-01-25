@@ -1,0 +1,74 @@
+﻿enum GameState
+{
+    None,
+    Initializing,
+    Starting,
+    Running,
+    GoalScored,
+    GameOver
+}
+
+enum PlayerTeam
+{
+    A,
+    B,
+}
+
+enum ActionType
+{
+    Jump,
+    Dash,
+    Attack_Gun,
+}
+
+enum ActionAvailabilityCondition
+{
+    Always,
+    InJumping,
+    NotInJumping,
+}
+
+enum PlayerLocomotionType
+{
+    Idle,
+    Move,
+    Brake,
+    Dash,
+    Stun,
+    Break,
+}
+
+enum PlayerPostureType
+{
+    Standing,
+    Jumping,
+    Falling,
+}
+
+enum PlayerWeaponStateType
+{
+    None,
+    GunAttack,
+}
+
+enum PlayerPartsType
+{
+    Body,
+    Gun,
+}
+
+enum EntityType
+{
+    None,
+    Enemy,
+    DynamicEntity,
+    StaticEntity,
+}
+
+enum CinematicCameraType
+{
+    StartCamera,
+    WinCamera,
+    LoseCamera,
+}
+

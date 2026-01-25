@@ -1,0 +1,61 @@
+﻿component PlayerDatabaseComponent
+{
+    [Header("Parts Indexes")]
+    list<FP> equippingPartsIndexesList;
+
+    [Header("Status Database")]
+    BodyDatabase bodyDatabase;
+    GunDatabase gunDatabase;
+}
+
+struct BodyDatabase
+{
+    // config
+    asset_ref<CharacterController3DConfig> defaultConfig;
+    asset_ref<CharacterController3DConfig> dashConfig;
+
+    // base
+    FP healthPoint;//生命值
+    FP toughPoint;//韧性值
+
+    // move
+    FP minMoveSpeed;//基础地面跑步最小速度
+    FP maxMoveSpeed;//基础地面跑步最大速度
+    FP groundTurnSpeed;//基础地面旋转速度
+    FP brakeMultiplier;//基础地面减速因子
+    FP accelerationDuration;//基础地面加速时间
+
+    // jump
+    FP maxJumpHeight;//基础最大跳跃高度 
+    FP gravity;//重力加速度
+    FP fallSpeedMultiplier;//基础下落速度因子
+    FP airTurnSpeed;//基础空中转向能力
+    FP jumpLandStunDuration;//基础跳跃着地硬直時間
+
+    // dash
+    bool keepInertialVelocity;//dash后是否保持惯性移动
+    FP dashMoveSpeed;//dash速度
+
+    // break
+    FP toughPointRecoverAmount;
+    FP breakDuration;
+}
+
+[Serializable]
+struct GunDatabase
+{
+    asset_ref<EntityPrototype> projectilePrototype;
+    
+    FPVector3 gunMuzzleOffset;
+    FP gunConsecutiveShootIntervalDuration;//连续射击的间隔时间
+
+    FP projectileAttackPoint;//攻击力
+    FP projectileDownPoint;//Down值
+    FP projectileKnockBackPoint;//被击退的值
+    FP projectileSpeed;//子弹速度
+    FP projectileDuration;//子弹在屏幕中存在的时间
+}
+
+
+
+

@@ -1,0 +1,6 @@
+﻿component ProjectileComponent
+{
+    EntityRef Owner;
+    asset_ref<PlayerPartsData_Gun> gunData;
+    CountdownTimer projectileDurationTimer;
+}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 824082187929c6b449418e613276f7ce, type: 3}
+  m_Name: Player Action Data_Jump
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: Resources/DataBase/Player Action Data/Player Action Data_Jump
+    Guid:
+      Value: 294914941642638713
+  inputBufferDuration:
+    RawValue: 9831
+  delayDuration:
+    RawValue: 9831
+  activateDuration:
+    RawValue: 0
+  cooldownDuration:
+    RawValue: 0
+  actionAvailabilityCondition: 2
+  keepPeviousVelocity: 1
+  startCooldownAfterActivate: 0
+  _actionUIPrefab: {fileID: 4353528997759187300, guid: ca45430c69a3e1e46bdf961efd00145e, type: 3}
+  actionType: 0

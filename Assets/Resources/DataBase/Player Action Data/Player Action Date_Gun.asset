@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148c84cdd8d5c9d4d999f09e4cb0117c, type: 3}
+  m_Name: Player Action Date_Gun
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: Resources/DataBase/Player Action Data/Player Action Date_Gun
+    Guid:
+      Value: 396101100660803054
+  inputBufferDuration:
+    RawValue: 131072
+  activateDuration:
+    RawValue: 0
+  cooldownDuration:
+    RawValue: 0
+  _actionUIPrefab: {fileID: 4353528997759187300, guid: 8fef660ff0c9ee44cbf63afbea3e936d, type: 3}
+  actionAvailabilityCondition: 0
+  actionType: 2

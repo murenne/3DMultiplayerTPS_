@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40938e8cfa6042a47920087ebd05cb04, type: 3}
+  m_Name: Runtime Parts Data Config
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: Resources/Configs/Runtime Config/Runtime Parts Data Config
+    Guid:
+      Value: 293273429223853381
+  bodysInventory:
+  - {fileID: 11400000, guid: b6a414b5fbaab894485946e34e3283d7, type: 2}
+  - {fileID: 11400000, guid: 8c5f7e16b98c8de4ea830eec5545881d, type: 2}
+  gunsInventory:
+  - {fileID: 11400000, guid: a68a18d6b3b399f4790403aca8d18fc7, type: 2}
+  - {fileID: 11400000, guid: a3a93efb617488243b236690b1918a39, type: 2}
+  bombsInventory:
+  - {fileID: 11400000, guid: 927fd849693849c4c96a3e1880ee2eaa, type: 2}
+  - {fileID: 11400000, guid: 7506a8a865409f140a1c4ccce8f1d023, type: 2}
+  podsInventory:
+  - {fileID: 11400000, guid: 37609f11280583641b8a4605d80aecbe, type: 2}
+  - {fileID: 11400000, guid: e71c5e6175f62c745b9f923ada0f99c4, type: 2}
+  legsInventory:
+  - {fileID: 11400000, guid: 0c2e28b626a8261419b0375d7c507533, type: 2}
+  - {fileID: 11400000, guid: 35f7dacf2fd46354ca2882d7a263c4c1, type: 2}

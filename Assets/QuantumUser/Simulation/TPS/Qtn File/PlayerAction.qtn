@@ -1,0 +1,58 @@
+﻿component PlayerActionComponent
+{
+    ActiveActionInfo activeActionInfo;
+
+    [Header("Action Order: Jump, Dash, Gun")]
+    array<PlayerActionInfo>[3] actionInfoArray;
+
+    ActionsParameter actionsParameter;
+}
+
+struct ActiveActionInfo
+{
+    [ExcludeFromPrototype] int activeActionIndex;
+    [ExcludeFromPrototype] FPVector3 castDirection;
+    [ExcludeFromPrototype] FPQuaternion castRotation;
+    [ExcludeFromPrototype] FPVector3 castVelocity;
+}
+
+struct PlayerActionInfo
+{
+    ActionType actionType;
+    asset_ref<PlayerActionData> actionData;
+
+    [ExcludeFromPrototype] Boolean isActionActiveStart;
+    [ExcludeFromPrototype] Boolean isActionActiveEnd;
+
+    [ExcludeFromPrototype] CountdownTimer inputBufferTimer;
+    [ExcludeFromPrototype] CountdownTimer activateTimer;
+    [ExcludeFromPrototype] CountdownTimer cooldownTimer;
+}
+
+struct ActionsParameter
+{
+    JumpAction jumpAction;
+    DashAction dashAction;
+    GunAction gunAction;
+}
+
+struct JumpAction
+{
+    bool isJumping;
+    FP currentVerticalVelocity;
+}
+
+struct DashAction
+{
+    bool isDashing;
+    bool dashStartInAir;
+    FPVector3 airDashInertiaDirection;
+}
+
+struct GunAction
+{
+    FPVector3 projectileSpawnPosition;//子弹生成位置
+    FPVector3 projectileDirection;//子弹射击方向
+
+    CountdownTimer consecutiveShootIntervalTimer;
+}

@@ -1,0 +1,10 @@
+﻿// Spawn Projectile
+signal OnSpawnProjectileSignal(EntityRef owner, PlayerPartsData_Gun gunData);
+
+// Collision
+signal OnCollisionProjectileHitCharacterSignal(CollisionInfo3D info, ProjectileComponent* projectile, PlayerStatusComponent* playerStatusComponent);
+signal OnCollisionProjectileHitStaticObjectSignal(CollisionInfo3D info, ProjectileComponent* projectile);
+signal OnCollisionCharacterHitNormalStaticObjectSignal(CollisionInfo3D info, PlayerStatusComponent* playerStatusComponent);
+
+// player Dead
+signal OnPlayerDiedSignal(entity_ref playerEntityRef, PlayerTeam playerTeam);

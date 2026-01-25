@@ -1,0 +1,8 @@
+component PlayerTargetComponent
+{
+    array<EntityRef>[10] targetArray; 
+    Int32 targetCount;             
+
+    EntityRef currentTarget;              
+    Int32 currentTargetIndex;             
+}

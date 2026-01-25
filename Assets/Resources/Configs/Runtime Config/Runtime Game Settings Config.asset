@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99acb2dcc8412114bb28782aa5c6f040, type: 3}
+  m_Name: Runtime Game Settings Config
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: Resources/Configs/Runtime Config/Runtime Game Settings Config
+    Guid:
+      Value: 337956231322984275
+  InitializationDuration:
+    RawValue: 196608
+  GameStartDuration:
+    RawValue: 196608
+  GameDuration:
+    RawValue: 1966080
+  GoalDuration:
+    RawValue: 196608
+  GameOverDuration:
+    RawValue: 196608
+  PlayerRespawnHeight:
+    RawValue: -1310720
+  BallRespawnHeight:
+    RawValue: -1310720
+  PlayerLayerMask:
+    BitMask: 128
