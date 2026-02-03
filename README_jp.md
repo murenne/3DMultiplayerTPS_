@@ -2,25 +2,44 @@
 
 [English](./README.md)| [中文](./README_cn.md) | [日本語](./README_jp.md)
 
-**Photon Quantum 3.0 決定論的エンジンに基づいて開発された、マルチプレイヤー3Dサードパーソン・シューティングゲームプロジェクトです。**
+**Photon Quantum 3.0 決定論的エンジン**に基づいて開発された、マルチプレイヤー3Dサードパーソン・シューティングゲームプロジェクトです。
 
 実際のプロジェクト経験に基づき、コアとなるゲームプレイシステムを移植およびリファクタリングしました。
 
-* [Getting Started](#getting-started)
-* [Control](#control)
-* [Software Architecture](#software-architecture)
-    * [Quantum ECS](#quantum-ecs)
-    * [AssetObject](#assetobject)
-* [Core Systems](#core-systems)
-    * [Game System](#game-system)
-    * [Spawn System](#spawn-system)
-    * [Player Movement System](#player-movement-system)
-    * [Action System](#action-system)
-    * [Data Processing](#data-processing)
-    * [Status and Damage System](#status-and-damage-system)
-    * [Animation System](#animation-system)
-    * [Camera System](#camera-system)
-* [Statement](#statement)
+## Tech Stack
+
+| カテゴリ | 技術 | バージョン | 説明 |
+| :--- | :--- | :--- | :--- |
+| **ゲームエンジン** | Unity | 2022.3.36f1 | コアゲーム開発プラットフォーム |
+| **ネットワーク** | Photon Quantum | 3.0 | ECSアーキテクチャを採用した決定論的マルチプレイヤーエンジン |
+| **ネットワーク** | Photon Realtime | Latest | Photonサービスのリアルタイムネットワーク層 |
+| **レンダリング** | Universal Render Pipeline (URP) | 14.0.11 | 高性能スクリプタブルレンダーパイプライン |
+| **入力システム** | Unity Input System | 1.7.0 | 複数デバイスに対応した最新の入力処理 |
+| **カメラ制御** | Cinemachine | 2.10.0 | 動的トラッキング機能を持つ高度なカメラシステム |
+| **アニメーション** | DOTween | Latest | 強力なアニメーション・トゥイーンライブラリ |
+| **開発ツール** | ParrelSync | Latest | マルチプレイヤーテスト用のマルチインスタンスUnityツール |
+| **アーキテクチャ** | ECS (Entity Component System) | Quantum 3.0 | データ指向プログラミングパラダイム |
+| **アセット管理** | Quantum AssetObject | Quantum 3.0 | 静的設定データ管理システム |
+
+---
+
+* [3D Multiplayer TPS](#3d-multiplayer-tps)
+    * [Tech Stack](#tech-stack)
+    * [Getting Started](#getting-started)
+    * [Control](#control)
+    * [Software Architecture](#software-architecture)
+        * [Quantum ECS](#quantum-ecs)
+        * [AssetObject](#assetobject)
+    * [Core Systems](#core-systems)
+        * [Game System](#game-system)
+        * [Spawn System](#spawn-system)
+        * [Player Movement System](#player-movement-system)
+        * [Action System](#action-system)
+        * [Data Processing](#data-processing)
+        * [Status and Damage System](#status-and-damage-system)
+        * [Animation System](#animation-system)
+        * [Camera System](#camera-system)
+    * [Statement](#statement)
 ## Getting Started
 
 本プロジェクトは **Unity 2022.3.36f1** をベースに開発されています。Unityのバージョンが **2022.3.36f1** 以上であることを確認してください。

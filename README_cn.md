@@ -3,10 +3,28 @@
 [English](./README.md)| [中文](./README_cn.md) | [日本語](./README_jp.md)
 
 这是一个基于 **Photon Quantum 3.0 确定性引擎** 开发的多人3D第三人称射击游戏项目  
-以实际项目经验为基础，移植并重构核心玩法系统
+以实际项目经验为基础,移植并重构核心玩法系统
+
+## Tech Stack
+
+| 分类 | 技术 | 版本 | 说明 |
+| :--- | :--- | :--- | :--- |
+| **游戏引擎** | Unity | 2022.3.36f1 | 核心游戏开发平台 |
+| **网络框架** | Photon Quantum | 3.0 | 确定性多人游戏引擎，采用 ECS 架构 |
+| **网络框架** | Photon Realtime | Latest | Photon 服务的实时网络层 |
+| **渲染管线** | Universal Render Pipeline (URP) | 14.0.11 | 高性能可编程渲染管线 |
+| **输入系统** | Unity Input System | 1.7.0 | 现代化输入处理，支持多设备 |
+| **相机控制** | Cinemachine | 2.10.0 | 高级相机系统，支持动态跟踪 |
+| **动画系统** | DOTween | Latest | 强大的动画和补间库 |
+| **开发工具** | ParrelSync | Latest | 多实例 Unity 测试工具，用于多人游戏测试 |
+| **架构模式** | ECS (实体组件系统) | Quantum 3.0 | 面向数据的编程范式 |
+| **资源管理** | Quantum AssetObject | Quantum 3.0 | 静态配置数据管理系统 |
+
+---
 
 <!--ts-->
 * [3D Multiplayer TPS](#3d-multiplayer-tps)
+    * [Tech Stack](#tech-stack)
     * [Getting Started](#getting-started)
     * [Control](#control)
     * [Software Architecture](#software-architecture)

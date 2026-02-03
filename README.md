@@ -2,25 +2,44 @@
 
 [English](./README.md)| [中文](./README_cn.md) | [日本語](./README_jp.md)
 
-**A Multiplayer 3D Third-Person Shooter Project developed based on the Photon Quantum 3.0 Deterministic Engine.**
+A Multiplayer 3D Third-Person Shooter Project developed based on the **Photon Quantum 3.0 Deterministic Engine**.
 
 Based on actual project experience, the core gameplay systems have been ported and refactored.
 
-* [Getting Started](#getting-started)
-* [Control](#control)
-* [Software Architecture](#software-architecture)
-    * [Quantum ECS](#quantum-ecs)
-    * [AssetObject](#assetobject)
-* [Core Systems](#core-systems)
-    * [Game System](#game-system)
-    * [Spawn System](#spawn-system)
-    * [Player Movement System](#player-movement-system)
-    * [Action System](#action-system)
-    * [Data Processing](#data-processing)
-    * [Status and Damage System](#status-and-damage-system)
-    * [Animation System](#animation-system)
-    * [Camera System](#camera-system)
-* [Statement](#statement)
+## Tech Stack
+
+| Category | Technology | Version | Description |
+| :--- | :--- | :--- | :--- |
+| **Game Engine** | Unity | 2022.3.36f1 | Core game development platform |
+| **Networking** | Photon Quantum | 3.0 | Deterministic multiplayer engine with ECS architecture |
+| **Networking** | Photon Realtime | Latest | Real-time networking layer for Photon services |
+| **Rendering** | Universal Render Pipeline (URP) | 14.0.11 | High-performance scriptable render pipeline |
+| **Input System** | Unity Input System | 1.7.0 | Modern input handling supporting multiple devices |
+| **Camera Control** | Cinemachine | 2.10.0 | Advanced camera system with dynamic tracking |
+| **Animation** | DOTween | Latest | Powerful animation and tweening library |
+| **Development Tools** | ParrelSync | Latest | Multi-instance Unity testing for multiplayer |
+| **Architecture** | ECS (Entity Component System) | Quantum 3.0 | Data-oriented programming paradigm |
+| **Asset Management** | Quantum AssetObject | Quantum 3.0 | Static configuration data management |
+
+---
+
+* [3D Multiplayer TPS](#3d-multiplayer-tps)
+    * [Tech Stack](#tech-stack)
+    * [Getting Started](#getting-started)
+    * [Control](#control)
+    * [Software Architecture](#software-architecture)
+        * [Quantum ECS](#quantum-ecs)
+        * [AssetObject](#assetobject)
+    * [Core Systems](#core-systems)
+        * [Game System](#game-system)
+        * [Spawn System](#spawn-system)
+        * [Player Movement System](#player-movement-system)
+        * [Action System](#action-system)
+        * [Data Processing](#data-processing)
+        * [Status and Damage System](#status-and-damage-system)
+        * [Animation System](#animation-system)
+        * [Camera System](#camera-system)
+    * [Statement](#statement)
 ## Getting Started
 
 This project is developed based on **Unity 2022.3.36f1**. Please ensure your Unity version is **2022.3.36f1** or higher.
