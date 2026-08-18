@@ -23,6 +23,7 @@
 
 ---
 
+<!--ts-->
 * [3D Multiplayer TPS](#3d-multiplayer-tps)
     * [Tech Stack](#tech-stack)
     * [Getting Started](#getting-started)
@@ -39,29 +40,31 @@
         * [Status and Damage System](#status-and-damage-system)
         * [Animation System](#animation-system)
         * [Camera System](#camera-system)
-    * [Statement](#statement)
+    * [About 3D Model Assets](#about-3d-model-assets)
+<!--te-->
+
 ## Getting Started
+1. 本プロジェクトは **Unity 2022.3.36f1** をベースに開発されています。Unityのバージョンが **2022.3.36f1** 以上であることを確認してください。
+2. **Photon Quantum SDK 3.0** がインストールされ、**AppID** が正しく設定されていることを確認してください。
+3. GitHubからプロジェクトを指定のフォルダにクローンし、Unityで開きます。
+4. Playボタンをクリックしてプロジェクトを実行します。
 
-本プロジェクトは **Unity 2022.3.36f1** をベースに開発されています。Unityのバージョンが **2022.3.36f1** 以上であることを確認してください。
-
-1.  **Photon Quantum SDK 3.0** がインストールされ、**AppID** が正しく設定されていることを確認してください。
-2.  GitHubからプロジェクトを指定のフォルダにクローンし、Unityで開きます。
-3.  Playボタンをクリックしてプロジェクトを実行します。
+---
 
 ## Control
-
 本プロジェクトは、キーボード・マウスおよびゲームパッド（コントローラー）の双方に対応しています。
 
 | キー / 操作 | 機能説明 |
-| :--- | :--- |
+| ----------| ------------------------ |
 | **WASD** / **左スティック** | プレイヤー移動 |
 | **マウス左クリック** / **RT** | 射撃 / 攻撃 |
 | **Space** / **A (South)** | ジャンプ |
 | **Shift** / **X (West)** | ダッシュ / スプリント |
 | **Tab** / **RB** | ターゲットロック切り替え |
 
-## Software Architecture
+---
 
+## Software Architecture
 本プロジェクトは **Photon Quantum 3.0** 決定論的ネットワークフレームワークを使用し、ロジックとビュー（描画）を分離したアーキテクチャ設計を採用しています。
 
 ### Quantum ECS
@@ -80,9 +83,12 @@
 
 すべての設定データは AssetObject を通じて管理され、調整やバージョン管理が容易になっています。
 
-## Core Systems
+---
 
+## Core Systems
 プロジェクトでは以下のコアゲームシステムを実装済みです：
+
+![Shooting](./README_Images/Shooting.gif)
 
 ### Game System
 ゲームのライフサイクル管理を担当します。
@@ -134,14 +140,14 @@
 * アクションのブレンド（混合）とトランジション（遷移）をサポート。
 * ネットワーク状態をローカルの表現に同期。
 
-### Camera
+### Camera System
 カメラ制御とレンズ管理を行います。
 * ゲーム初期化時に正しいチームカメラを有効化。
 * 全プレイヤーが収まるようにカメラ距離を自動調整。
 * ターゲットプレイヤーへの動的追従。
 * スムーズなカメラ遷移エフェクト。
 
-## Statement
+---
 
-本プロジェクトは **Photon Quantum 3.0** 決定論的ネットワークエンジンに基づいて開発されています。
-現在のバージョンでは、コアとなるゲームプレイシステムの移植とリファクタリングが完了しています。
+## About 3D Model Assets
+本プロジェクトで使用している3Dモデルファイルの著作権は [**上海米哈游網絡科技股份有限公司**](https://www.mihoyo.com/) に帰属します。商用目的での使用、および著作権者の利益を損なう行為は禁止されています。

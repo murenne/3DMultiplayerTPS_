@@ -39,7 +39,7 @@
         * [Status and Damage System](#status-and-damage-system)
         * [Animation System](#animation-system)
         * [Camera System](#camera-system)
-    * [Statement](#statement)
+    * [About 3D Model Assets](#about-3d-model-assets)
 <!--te-->
 
 ## Getting Started
@@ -88,6 +88,8 @@
 
 ## Core Systems
 项目已实现以下核心游戏系统：
+
+![Shooting](./README_Images/Shooting.gif)
 
 ### Game System
 负责游戏生命周期管理
@@ -139,7 +141,7 @@
 - 支持动作混合与过渡
 - 同步网络状态到本地表现
 
-### Camera
+### Camera System
 相机控制与镜头管理
 - 游戏初始化时激活正确的队伍相机
 - 自动调整相机距离以包含所有玩家
@@ -148,6 +150,5 @@
 
 ---
 
-## Statement
-该项目基于 **Photon Quantum 3.0** 确定性网络引擎开发  
-目前版本已完成核心玩法系统的移植与重构  
+## About 3D Model Assets
+本项目所用 3D模型 文件版权归属 [**上海米哈游网络科技股份有限公司**](https://www.mihoyo.com/) 所有。不得用于商业用途，不得损害版权方的利益。  

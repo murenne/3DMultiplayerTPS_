@@ -23,6 +23,7 @@ Based on actual project experience, the core gameplay systems have been ported a
 
 ---
 
+<!--ts-->
 * [3D Multiplayer TPS](#3d-multiplayer-tps)
     * [Tech Stack](#tech-stack)
     * [Getting Started](#getting-started)
@@ -39,29 +40,31 @@ Based on actual project experience, the core gameplay systems have been ported a
         * [Status and Damage System](#status-and-damage-system)
         * [Animation System](#animation-system)
         * [Camera System](#camera-system)
-    * [Statement](#statement)
+    * [About 3D Model Assets](#about-3d-model-assets)
+<!--te-->
+
 ## Getting Started
+1. This project is developed based on **Unity 2022.3.36f1**. Please ensure your Unity version is **2022.3.36f1** or higher.
+2. Ensure **Photon Quantum SDK 3.0** is installed and the **AppID** is correctly configured.
+3. Clone the project from GitHub to your local folder and open it with Unity.
+4. Click the **Play** button to run the project.
 
-This project is developed based on **Unity 2022.3.36f1**. Please ensure your Unity version is **2022.3.36f1** or higher.
-
-1.  Ensure **Photon Quantum SDK 3.0** is installed and the **AppID** is correctly configured.
-2.  Clone the project from GitHub to your local folder and open it with Unity.
-3.  Click the **Play** button to run the project.
+---
 
 ## Control
-
 This project supports both **Keyboard/Mouse** and **Gamepad** modes.
 
 | Key / Input | Action Function |
-| :--- | :--- |
+| ----------| ------------------------ |
 | **WASD** / **Left Stick** | Player Movement |
 | **Left Click** / **RT** | Shoot / Attack |
 | **Space** / **A (South)** | Jump |
 | **Shift** / **X (West)** | Sprint / Dash |
 | **Tab** / **RB** | Toggle Target Lock |
 
-## Software Architecture
+---
 
+## Software Architecture
 This project utilizes the **Photon Quantum 3.0** deterministic network framework, adopting an architecture that strictly separates logic from the view.
 
 ### Quantum ECS
@@ -80,9 +83,12 @@ The project uses Quantum's **AssetObject** system to manage static configuration
 
 All configuration data is managed via AssetObject, facilitating easy adjustments and version control.
 
-## Core Systems
+---
 
+## Core Systems
 The project has implemented the following core game systems:
+
+![Shooting](./README_Images/Shooting.gif)
 
 ### Game System
 Responsible for managing the game lifecycle.
@@ -134,14 +140,14 @@ Handles view-layer animation presentation.
 * Supports action blending and transitions.
 * Synchronizes network state to local presentation.
 
-### Camera
+### Camera System
 Camera control and lens management.
 * Activates the correct team camera upon game initialization.
 * Automatically adjusts camera distance to include all players.
 * Dynamically follows the target player.
 * Smooth camera transition effects.
 
-## Statement
+---
 
-This project is developed based on the **Photon Quantum 3.0** deterministic network engine.
-The current version has completed the porting and refactoring of the core gameplay systems.
+## About 3D Model Assets
+The 3D model files used in this project are copyrighted by [**miHoYo Co., Ltd. (Shanghai)**](https://www.mihoyo.com/). They must not be used for commercial purposes, nor in any way that harms the interests of the copyright holder.
